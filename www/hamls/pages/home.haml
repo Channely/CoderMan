@@ -1,10 +1,14 @@
 %div(align="center")
-  %h3 Guess Numbers
+  %h3 GuessFourDs
+  %hr
   %br
-    %input(ng-model="alert_message" type="text" ) Alert Message
+    %input.input-full.text-center(type = "text" disabled="true" value="{{alert_message}}" )
   %br
-    %input(ng-model="display" type="text" ) Display Result
+    %input.input-mini.text-center(type = "text" disabled="true" value="result")
+    %input.text-center(type = "text" disabled="true" value="{{display}}" )
   %br
-    %input(ng-model="num_input" type="text" ) Input A Number
-  %button(ng-model="start_game_button" ng-tap="start_this_game()") Begin
-  %button(ng-model="compute_result_button" ng-tap="guess_it()") Compute
+    %input.input-mini.text-center(type = "text" disabled="true" value="input")
+    %input#input_id.input-medium.text-center(type = "number" ng-model="num_input")
+  %br
+    %button(class="{{class_start}}" ng-model="start_game_button" ng-tap="start_this_game()") Begin
+    %button(class="{{class_compare}}" ng-model="compute_result_button" ng-tap="guess_it()") Compare
