@@ -1,8 +1,8 @@
 #! /bin/sh
 echo "\033[34m \033[05m Only for JT Frame on Android Platform. \033[0m"
-package_name="com.moode.sms.client"
+package_name="com.moode.sms.client.coder.man"
 main_activity_path="com.moode.sms.activity.MainActivity"
-apk_name="MoodeSMS_client-debug.apk"
+apk_name="CoderMan-debug.apk"
 #packagename="org.sunshinelibrary.english"
 gen
 echo "\033[34m \033[05m gen OVER! \033[0m"
