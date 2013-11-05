@@ -2,6 +2,12 @@ myModule.config(function($routeProvider) {
     $routeProvider.when("/",{
         templateUrl: "pages/home.html",
         controller: HomeController
+    }).when("/home", {
+            templateUrl: "pages/home.html",
+            controller: HomeController
+    }).when("/home_simple", {
+            templateUrl: "pages/home_simple.html",
+            controller: HomeSimpleController
     }).otherwise({
             redirectTo:"/"
         });

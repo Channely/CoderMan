@@ -1,0 +1,21 @@
+%div(align="center")
+  %div(ng-tap = "to_home_page()")
+    %i.header-left <---Original
+    %h2(style="color:#DAA520") GuessFourDs
+  %hr
+  %br
+  %input.input.input-full.text-center(type = "text" disabled="true" value="{{alert_message}}" style="height:25px" )
+  %br
+  %br
+  %br
+  %input.text-center(type = "text" disabled="true" value="{{display}}" style="height:25px")
+  %br
+  %br
+  %br
+  %input#input_id.input-medium.text-center(type = "number" ng-model="num_input" style="height:25px")
+  %br
+  %br
+  %br
+  %div(ng-switch = "class_start")
+    %button(class="btn-primary btn-large" ng-switch-when="btn-large" ng-model="start_game_button" ng-tap="start_this_game()" style="background:green;background-color:green") Begin
+    %button(class="btn-primary btn-large" ng-switch-when="btn-4" ng-model="compute_result_button" ng-tap="guess_it()" style="background:black;background-color:black" ) Compare

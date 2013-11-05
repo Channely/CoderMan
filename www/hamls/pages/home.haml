@@ -1,14 +1,20 @@
 %div(align="center")
-  %h3 GuessFourDs
+  %div(ng-tap = "to_simple_page()")
+    %h2(style="color:#DAA520") GuessFourDs
+    %i.header-right Simple--->
   %hr
   %br
-    %input.input-full.text-center(type = "text" disabled="true" value="{{alert_message}}" )
+    %input.input.input-full.text-center(type = "text" disabled="true" value="{{alert_message}}" style="height:25px" )
   %br
-    %input.input-mini.text-center(type = "text" disabled="true" value="result")
-    %input.text-center(type = "text" disabled="true" value="{{display}}" )
   %br
-    %input.input-mini.text-center(type = "text" disabled="true" value="input")
-    %input#input_id.input-medium.text-center(type = "number" ng-model="num_input")
+    %input.input-mini.text-center(type = "text" disabled="true" value="result" style="height:25px")
+    %input.text-center(type = "text" disabled="true" value="{{display}}" style="height:25px")
+  %br
+  %br
+    %input.input-mini.text-center(type = "text" disabled="true" value="input" style="height:25px")
+    %input#input_id.input-medium.text-center(type = "number" ng-model="num_input" style="height:25px")
+  %br
+  %br
   %br
     %button(class="{{class_start}}" ng-model="start_game_button" ng-tap="start_this_game()") Begin
     %button(class="{{class_compare}}" ng-model="compute_result_button" ng-tap="guess_it()") Compare

@@ -1,5 +1,4 @@
-function HomeController($scope,$navigate){
-    make_begin_btn_bigger();
+function HomeSimpleController($scope,$navigate){make_begin_btn_bigger();
     $scope.start_this_game=function(){
         localStorage.a_fixed_num = random_a_num();
         localStorage.guess_times = 0;
@@ -32,15 +31,16 @@ function HomeController($scope,$navigate){
 
     function make_begin_btn_bigger(){
         $scope.input_status = "disabled"
-        $scope.class_start = "btn-primary btn-large"
-        $scope.class_compare = "btn-4"
+        $scope.class_start = "btn-large"
+//        $scope.class_compare = "btn-4"
     }
     function make_compare_btn_bigger(){
         $scope.class_start = "btn-4"
-        $scope.class_compare = "btn-primary btn-large"
+//        $scope.class_compare = "btn-large"
     }
 
-    $scope.to_simple_page = function(){
-        $navigate.go("/home_simple")
+    $scope.to_home_page = function(){
+        $navigate.go("/home","slide","left")
     }
+
 }

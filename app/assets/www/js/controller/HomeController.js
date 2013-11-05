@@ -1,4 +1,4 @@
-function HomeController($scope){
+function HomeController($scope,$navigate){
     make_begin_btn_bigger();
     $scope.start_this_game=function(){
         localStorage.a_fixed_num = random_a_num();
@@ -38,5 +38,9 @@ function HomeController($scope){
     function make_compare_btn_bigger(){
         $scope.class_start = "btn-4"
         $scope.class_compare = "btn-primary btn-large"
+    }
+
+    $scope.to_simple_page = function(){
+        $navigate.go("/home_simple")
     }
 }
