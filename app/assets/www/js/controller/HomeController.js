@@ -40,7 +40,12 @@ function HomeController($scope,$navigate){
         $scope.class_compare = "btn-primary btn-large"
     }
 
+
     $scope.to_simple_page = function(){
         $navigate.go("/home_simple")
+    }
+
+    $scope.to_home_page = function(){
+        $navigate.go("/home","slide","left")
     }
 }

@@ -31,7 +31,7 @@ function HomeSimpleController($scope,$navigate){make_begin_btn_bigger();
 
     function make_begin_btn_bigger(){
         $scope.input_status = "disabled"
-        $scope.class_start = "btn-large"
+        $scope.class_start = "btn-primary btn-large"
 //        $scope.class_compare = "btn-4"
     }
     function make_compare_btn_bigger(){
