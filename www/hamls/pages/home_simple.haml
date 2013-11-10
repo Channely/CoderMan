@@ -1,8 +1,8 @@
-%div(align="center")
-  %div(ng-tap = "to_home_page()")
-    %i.header-left <---Original
-    %h2(style="color:#DAA520") GuessFourDs
-  %hr
+%header.header
+  %i.header-left(ng-tap = "to_home_page()") <---Original
+  %h4(style="color:#DAA520" ng-tap = "to_navigate_page()" ) Digits
+.wrapper(align="center")
+  %br
   %br
   %input.input.input-full.text-center(type = "text" disabled="true" value="{{alert_message}}" style="height:25px" )
   %br

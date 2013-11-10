@@ -1,16 +1,16 @@
 myModule.config(function($routeProvider) {
     $routeProvider.when("/",{
-        templateUrl: "pages/home.html",
-        controller: HomeController
+        templateUrl: "pages/navigate_page.html",
+        controller: NavigatePageController
         }).when("/home", {
             templateUrl: "pages/home.html",
             controller: HomeController
         }).when("/home_simple", {
             templateUrl: "pages/home_simple.html",
             controller: HomeController
-        }).when("/index", {
-            templateUrl: "pages/index.html",
-            controller: IndexController
+        }).when("/navigate_page", {
+            templateUrl: "pages/navigate_page.html",
+            controller: NavigatePageController
     }).otherwise({
             redirectTo:"/"
         });

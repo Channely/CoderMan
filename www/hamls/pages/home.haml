@@ -1,8 +1,7 @@
-%div(align="center")
-  %div(ng-tap = "to_simple_page()")
-    %h2(style="color:#DAA520") GuessFourDs
-    %i.header-right Simple--->
-  %hr
+%header.header
+  %h4(style="color:#DAA520" ng-tap = "to_navigate_page()") Digits
+  %i.header-right(ng-tap = "to_simple_page()") Simple--->
+.wrapper(align="center")
   %br
   %br
   %input.input.input-full.text-center(type = "text" disabled="true" value="{{alert_message}}" style="height:25px" )

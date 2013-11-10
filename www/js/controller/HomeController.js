@@ -48,4 +48,8 @@ function HomeController($scope,$navigate){
     $scope.to_home_page = function(){
         $navigate.go("/home","slide","left")
     }
+
+    $scope.to_navigate_page = function(){
+        $navigate.go("/navigate_page","slide")
+    }
 }
